@@ -8,7 +8,7 @@ const Products = () => {
         .then(res=>res.json())
         .then(data =>setProducts(data))
     },[]);
-
+    // delete functionality ready
     const handleDelete = id =>{
         const procced = window.confirm("Are You sure You Want to Delete ?")
         if(procced){
